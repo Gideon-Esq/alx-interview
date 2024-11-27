@@ -14,3 +14,4 @@ def makeChange(coins, total):
 
     # Check if the total is achievable
     return dp[total] if dp[total] != float('inf') else -1
+
