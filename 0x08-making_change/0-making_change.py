@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Determine the fewest number of coins needed to meet a given amount total"""
+
+
 def makeChange(coins, total):
     if total <= 0:
         return 0
@@ -15,5 +17,3 @@ def makeChange(coins, total):
 
     """ Check if the total is achievable"""
     return dp[total] if dp[total] != float('inf') else -1
-
-
